@@ -22,3 +22,17 @@ def rootDir():
 @app.route('/registration')
 def registration():
     return render_template('registration.html')
+
+@app.route('/backgroundCheck', methods=['GET', 'POST'])
+def backgroundCheck():
+    # TODO: validate form submission
+    return render_template('backgroundCheck.html')
+
+@app.route('/confirmation')
+def confirmation():
+    # TODO: Create session cookie
+    return render_template('confirmation.html')
+
+@app.route('/login')
+def login():
+    return render_template('login.html')

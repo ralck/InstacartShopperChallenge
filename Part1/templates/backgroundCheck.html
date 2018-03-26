@@ -9,9 +9,39 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>Instacart Shopper Portal - Background Check</title>
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/cover.css')}}" rel="stylesheet">
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <body class="text-center">
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Instacart Shopper</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="/">Home</a>
+            <a class="nav-link" href="login">Login</a>
+            <!-- <a class="nav-link" href="#">Contact</a> -->
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+        <h1 class="cover-heading">Background Check</h1>
+        <p class="lead">As part of Instacart's commitment to quality, all applicants must
+          pass a background check.  Click the button below if you agree.</p>
+        <p class="lead">
+          <a href="confirmation" class="btn btn-lg btn-secondary">Agree and continue</a>
+        </p>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p><small><small>Adapted from Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</small></small></p>
+        </div>
+      </footer>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
