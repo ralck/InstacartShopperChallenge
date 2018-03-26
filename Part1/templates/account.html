@@ -28,31 +28,27 @@
       </header>
 
       <main role="main" class="inner cover">
-        <h1>Update your information.</h1>
+        <h1>Your information</h1>
+
+        <div class="row">
+          <p class="lead">First Name:</p>
+          <p class="lead">{{ firstName }}</p>
+        <div class="row">
+          <p class="lead">Last Name:</p>
+          <p class="lead">{{ lastName }}</p>
+        </div>
+        <div class="row">
+          <p class="lead">Email:</p>
+          <p class="lead">{{ emailAddr }}</p>
+        </div>
+        <div class="row">
+          <p class="lead">Phone:</p>
+          <p class="lead">{{ phoneNum }}</p>
+        </div>
 
         <!-- <div class="container"> -->
           <!-- <div class="row"> -->
-            <form method="POST" action="/account" class="lead d-flex h-100 mx-auto flex-column" >
-              <div class="form-group">
-                <input type="text" name="firstName" class="form-control" placeholder="First Name">
-              </div>
-              <div class="form-group">
-                <input type="text" name="lastName" class="form-control" placeholder="Last Name">
-              </div>
-              <div class="form-group">
-                <input type="text" name="emailAddr" class="form-control" placeholder="you@example.com">
-              </div>
-              <div class="form-group">
-                <input type="text" name="phoneNum" class="form-control" placeholder="Phone number">
-              </div>
-              <div class="checkbox mx-auto">
-                <div class="row">
-                  <label>
-                    <input type="checkbox" name="over21"> I am over 21
-                  </label>
-                </div>
-              </div>
-
+            <form method="POST" action="/registration" class="lead d-flex h-100 mx-auto flex-column" >
               <button type="submit" value="submit" class="btn btn-default">Update registration</button>
             </form>
           <!-- </div> -->
