@@ -30,6 +30,10 @@ def registration():
     if request.method == 'POST':
         # Validate registration information
         hasError = False
+        fNameError = ''
+        lNameError = ''
+        emailError = ''
+        phoneError = ''
         if(request.form['firstName'] == ''):
             fNameError = 'Please enter a first name.'
             hasError = True
@@ -79,11 +83,16 @@ def login():
     session.pop('loggedIn', None)
 
     if request.method == 'POST':
-        print(request.form['emailAddr'])
-        print(session['emailAddr'])
+        error = 'Invalid login information'
+        if('emailAddr' not in request.form):
+            return render_template('login.html', errorText=error)
+        if('emailAddr' not in session):
+            return render_template('login.html', errorText=error)
         if request.form['emailAddr'] == session['emailAddr']:
             session['loggedIn'] = True
             return redirect(url_for('account'))
+        else:
+            return render_template('login.html', errorText=error)
 
     return render_template('login.html')
 
