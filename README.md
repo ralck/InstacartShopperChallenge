@@ -1,5 +1,6 @@
 # InstacartShopperChallenge
-Part 1:
+## Part 1:
+
 I used Python's flask simple web server.  In order to run it you will need:
 - Python 3.X
 - flask (pip install flask)
@@ -21,7 +22,8 @@ I used the Cover template to start as I thought it looked nice and fit the
 requirements well enough.
 
 
-Part 2:
+## Part 2:
+
 I used Python again for part 2.  In order to run my script you will need:
 - Python 3.X
 - sqlite3 (pip install sqlite3)
@@ -38,3 +40,8 @@ The second option I tried was a single query and then I parsed the results and
 built the result sets in python.  This, based on the profiler was slower.  I did
 not try to run larger or smaller data set sizes to see how that impacted each
 option.
+
+### License:
+I have not attributed a license to this project.  I am not sure what License
+Instacart may require for a project like this.  As soon as I get Confirmation
+from them I will update the license.
